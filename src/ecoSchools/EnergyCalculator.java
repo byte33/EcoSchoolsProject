@@ -1,12 +1,17 @@
+//Client code
+//Matteo Tullo 2018
 package ecoSchools;
 
-public class EnergyCalculator {
+import java.io.*;
 
-	public static void main(String[] args) {
-		EnergyMethods test = new EnergyMethods();
+public class EnergyCalculator{
+
+	public static void main(String[] args) throws FileNotFoundException {
+		EnergyMethods instance = new EnergyMethods();
 		
-		test.helloWorld();
+		instance.helloWorld();
+		instance.readIn();
+		
 
 	}
-
 }
