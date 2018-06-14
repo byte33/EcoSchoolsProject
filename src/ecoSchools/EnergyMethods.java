@@ -26,6 +26,7 @@ public class EnergyMethods {
 		File text = new File("C:\\Users\\mltul\\Documents\\GitHub\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
 		Scanner input = new Scanner(text);
 		while (input.hasNextLine()) {
+			String line = input.nextLine();
 			Scanner linescan = new Scanner(line); //Something doesn't work here
 			while (linescan.hasNextInt()) {
 				int lights = linescan.nextInt();
