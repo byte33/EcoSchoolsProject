@@ -11,6 +11,7 @@ public class EnergyCalculator{
 		
 		instance.helloWorld();
 		instance.readIn();
+		instance.read();
 		
 
 	}
