@@ -11,10 +11,15 @@ public class EnergyMethods {
 	String KWH, KWD, initial;
 	
 	void helloWorld() {
-		System.out.println("Hello World!");
+		try {
+			write("Hello World");
+		}
+		catch (IOException e) {
+			System.out.println("Sorry, the program was unable to write.");
+		}
 	}
 	void readIn() throws FileNotFoundException {
-		File text = new File("C:\\Users\\mltul\\Documents\\GitHub\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
+		File text = new File("C:\\Users\\mltul\\Desktop\\git\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
 		Scanner input = new Scanner(text);
 		
 		while(input.hasNextLine()) {
@@ -25,7 +30,7 @@ public class EnergyMethods {
 	}
 	int [] read() throws FileNotFoundException {
 		int x = 0;
-		File text = new File("C:\\Users\\mltul\\Documents\\GitHub\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
+		File text = new File("C:\\Users\\mltul\\Desktop\\git\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
 		Scanner input = new Scanner(text);
 		while (input.hasNextLine()) {
 			String line = input.nextLine();

@@ -19,6 +19,7 @@ public class EnergyCalculator{
 		arrayClient = instance.read();  //needs to happen to read the file
 		instance.analyze();  //Calculations
 		instance.write(message);  //writes to a file "output.txt"
+		input.close();
 
 	}
 }
