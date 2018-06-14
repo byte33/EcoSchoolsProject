@@ -6,12 +6,12 @@ import java.io.*;
 
 public class EnergyCalculator{
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws FileNotFoundException, IOException {
 		EnergyMethods instance = new EnergyMethods();
-		int [] input;
-		input = instance.read();  //needs to happen to read the file
-		instance.analyze();  //prints totalLights
-		
+		int [] array;
+		array = instance.read();  //needs to happen to read the file
+		instance.analyze();  //prints info
+		instance.write();  //writes to a file "output.txt"
 
 	}
 }

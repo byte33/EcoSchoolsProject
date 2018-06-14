@@ -1,0 +1,5 @@
+A small program by Matteo Tullo
+
+708 Total Lights drawing 14 watts per hour
+9.912 Kilowatts per hour
+237.88800000000003 Kilowatts per day
