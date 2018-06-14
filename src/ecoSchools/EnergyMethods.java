@@ -48,6 +48,8 @@ public class EnergyMethods {
 		writer.println(initial);
 		writer.println(KWH);
 		writer.println(KWD);
+		writer.flush();
+		System.out.println("File 'output.txt' written successfully");
 		writer.close();
 	}
 	
