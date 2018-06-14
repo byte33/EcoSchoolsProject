@@ -27,7 +27,7 @@ public class EnergyMethods {
 		Scanner input = new Scanner(text);
 		while (input.hasNextLine()) {
 			String line = input.nextLine();
-			Scanner linescan = new Scanner(line);
+			Scanner linescan = new Scanner(line); //Something doesn't work here
 			while (linescan.hasNext()) {
 				int lights = linescan.nextInt();
 				System.out.println(lights);
