@@ -13,9 +13,6 @@ public class EnergyMethods {
 	void helloWorld() {
 		System.out.println("Hello World!");
 	}
-	void write(String word) {
-		System.out.println(word);
-	}
 	void readIn() throws FileNotFoundException {
 		File text = new File("C:\\Users\\mltul\\Documents\\GitHub\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
 		Scanner input = new Scanner(text);
@@ -41,6 +38,21 @@ public class EnergyMethods {
 		}
 		return(array);
 	}
+	void write(String message) throws IOException {
+		PrintWriter writer = new PrintWriter("output.txt", "UTF-8");
+		writer.println("A small program by Matteo Tullo");
+		writer.println();
+		writer.println(initial);
+		writer.println(KWH);
+		writer.println(KWD);
+		writer.println();
+		writer.println();
+		writer.println(message);
+		writer.flush();
+		System.out.println("File 'output.txt' written successfully");
+		writer.close();
+	}
+	
 	void write() throws IOException {
 		PrintWriter writer = new PrintWriter("output.txt", "UTF-8");
 		writer.println("A small program by Matteo Tullo");
