@@ -6,6 +6,7 @@ import java.io.*;
 import java.util.*;
 
 public class EnergyMethods {
+	int [] array = new int[22];
 	void helloWorld() {
 		System.out.println("Hello World!");
 	}
@@ -22,7 +23,8 @@ public class EnergyMethods {
 		input.close();
 		
 	}
-	void read() throws FileNotFoundException {
+	int [] read() throws FileNotFoundException {
+		int x = 0;
 		File text = new File("C:\\Users\\mltul\\Documents\\GitHub\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
 		Scanner input = new Scanner(text);
 		while (input.hasNextLine()) {
@@ -30,11 +32,24 @@ public class EnergyMethods {
 			Scanner linescan = new Scanner(line); //Something doesn't work here
 			while (linescan.hasNextInt()) {
 				int lights = linescan.nextInt();
-				System.out.println(lights);
-			}
+				array[x] = (lights);
+				x++;
+			}	
+		}
+		return(array);
+	}
+	void write() throws IOException {
+		PrintWriter writer = new PrintWriter("output.txt", "UTF-8");
+		writer.println();
+	}
+	void analyze() {
+		int totalLights = 0;
+		for (int i=0; i<array.length; i++) {
+			int value = array[i];
+			totalLights = value + totalLights;
 			
 		}
-		
+		System.out.println(totalLights);
 	}
 
 	

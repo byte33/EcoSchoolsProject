@@ -8,9 +8,9 @@ public class EnergyCalculator{
 
 	public static void main(String[] args) throws FileNotFoundException {
 		EnergyMethods instance = new EnergyMethods();
-		
-		instance.helloWorld();
-		instance.read();
+		int [] input;
+		input = instance.read();  //needs to happen to read the file
+		instance.analyze();  //prints totalLights
 		
 
 	}
