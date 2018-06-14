@@ -13,7 +13,7 @@ public class EnergyMethods {
 		System.out.println(word);
 	}
 	void readIn() throws FileNotFoundException {
-		File text = new File("C:\\Users\\mltul\\Desktop\\git\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
+		File text = new File("C:\\Users\\mltul\\Documents\\GitHub\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
 		Scanner input = new Scanner(text);
 		
 		while(input.hasNextLine()) {
@@ -23,12 +23,12 @@ public class EnergyMethods {
 		
 	}
 	void read() throws FileNotFoundException {
-		File text = new File("C:\\Users\\mltul\\Desktop\\git\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
+		File text = new File("C:\\Users\\mltul\\Documents\\GitHub\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
 		Scanner input = new Scanner(text);
 		while (input.hasNextLine()) {
 			String line = input.nextLine();
 			Scanner linescan = new Scanner(line); //Something doesn't work here
-			while (linescan.hasNext()) {
+			while (linescan.hasNextInt()) {
 				int lights = linescan.nextInt();
 				System.out.println(lights);
 			}

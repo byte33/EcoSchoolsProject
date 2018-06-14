@@ -10,7 +10,6 @@ public class EnergyCalculator{
 		EnergyMethods instance = new EnergyMethods();
 		
 		instance.helloWorld();
-		instance.readIn();
 		instance.read();
 		
 
