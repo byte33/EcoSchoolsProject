@@ -19,7 +19,7 @@ public class EnergyMethods {
 		}
 	}
 	void readIn() throws FileNotFoundException {
-		File text = new File("C:\\Users\\mltul\\Desktop\\git\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
+		File text = new File("data.txt");
 		Scanner input = new Scanner(text);
 		
 		while(input.hasNextLine()) {
@@ -30,7 +30,7 @@ public class EnergyMethods {
 	}
 	int [] read() throws FileNotFoundException {
 		int x = 0;
-		File text = new File("C:\\Users\\mltul\\Desktop\\git\\EcoSchoolsProject\\data.txt"); //Change file path accordingly
+		File text = new File("data.txt");
 		Scanner input = new Scanner(text);
 		while (input.hasNextLine()) {
 			String line = input.nextLine();
