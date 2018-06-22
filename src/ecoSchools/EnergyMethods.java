@@ -16,6 +16,7 @@ public class EnergyMethods {
 		}
 		catch (IOException e) {
 			System.out.println("Sorry, the program was unable to write.");
+			e.printStackTrace();
 		}
 	}
 	void readIn() throws FileNotFoundException {
