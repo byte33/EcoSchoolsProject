@@ -7,8 +7,10 @@ import java.util.*;
 
 public class EnergyMethods {
 	final int watt = 14;
+	final double tree = 12.00;
+	final double co2e = 0.180;
 	int [] array = new int[22];
-	String KWH, KWD, initial;
+	String KWH, KWD, initial, KWY, carbonYear, carbonStudent, treeString ;
 	
 	void helloWorld() {
 		try {
@@ -51,6 +53,10 @@ public class EnergyMethods {
 		writer.println(initial);
 		writer.println(KWH);
 		writer.println(KWD);
+		writer.println(KWY);
+		writer.println(carbonYear);
+		writer.println(carbonStudent);
+		writer.println(treeString);
 		writer.println();
 		writer.println();
 		writer.println(message);
@@ -66,6 +72,10 @@ public class EnergyMethods {
 		writer.println(initial);
 		writer.println(KWH);
 		writer.println(KWD);
+		writer.println(KWY);
+		writer.println(carbonYear);
+		writer.println(carbonStudent);
+		writer.println(treeString);
 		writer.flush();
 		System.out.println("File 'output.txt' written successfully");
 		writer.close();
@@ -84,6 +94,13 @@ public class EnergyMethods {
 		KWH = (totalKwatt + " Kilowatts per hour");
 		totalKwatt = 24 * totalKwatt;
 		KWD = (totalKwatt + " Kilowatts per day");
+		totalKwatt = 365 * totalKwatt;
+		KWY = (totalKwatt + " Kilowatts per year");
+		double co2eyear = (totalKwatt * co2e);
+		carbonYear = (co2eyear + "kg CO2e per year");
+		carbonStudent = ((co2eyear/1100.00) + "kg CO2e/student/year, assuming 1100 students");
+		treeString = (co2eyear/tree + " trees to offset one year of electricity use");
+		
 		
 		
 	}

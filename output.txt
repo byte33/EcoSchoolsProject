@@ -3,6 +3,10 @@ A small program by Matteo Tullo
 708 Total Lights drawing 14 watts per hour
 9.912 Kilowatts per hour
 237.88800000000003 Kilowatts per day
+86829.12000000001 Kilowatts per year
+15629.241600000001kg CO2e per year
+14.208401454545456kg CO2e/student/year, assuming 1100 students
+1302.4368000000002 trees to offset one year of electricity use
 
 
 no
